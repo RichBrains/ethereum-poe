@@ -1,0 +1,687 @@
+{
+  "contractName": "PublicDocumentBuilder",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "setBeneficiary",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_buildingCostWei",
+          "type": "uint256"
+        }
+      ],
+      "name": "setCost",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "create",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "contractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "ContractCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x606060405260008054600160a060020a033316600160a060020a0319918216811790925560018054909116909117905567016345785d8a0000600255610a1d8061004a6000396000f3006060604052361561006a5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631c31f71081146100a057806344a0d68a146100bf5780638da5cb5b146100d5578063efc81a8c14610104578063f2fde38b1461010c575b600154600160a060020a03163480156108fc0290604051600060405180830381858888f19350505050151561009e57600080fd5b005b34156100ab57600080fd5b61009e600160a060020a036004351661012b565b34156100ca57600080fd5b61009e600435610175565b34156100e057600080fd5b6100e8610195565b604051600160a060020a03909116815260200160405180910390f35b61009e6101a4565b341561011757600080fd5b61009e600160a060020a0360043516610299565b60005433600160a060020a0390811691161461014657600080fd5b6001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b60005433600160a060020a0390811691161461019057600080fd5b600255565b600054600160a060020a031681565b6002546000903410156101b657600080fd5b6101be6103d2565b604051809103906000f08015156101d457600080fd5b905080600160a060020a031663f2fde38b336040517c010000000000000000000000000000000000000000000000000000000063ffffffff8416028152600160a060020a039091166004820152602401600060405180830381600087803b151561023d57600080fd5b6102c65a03f1151561024e57600080fd5b5050507fcf78cf0d6f3d8371e1075c69c492ab4ec5d8cf23a1a239b6a51a1d00be7ca31281604051600160a060020a03909116815260200160405180910390a1610296610334565b50565b60005433600160a060020a039081169116146102b457600080fd5b600160a060020a03811615156102c957600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b600154600254600160a060020a039091169080156108fc0290604051600060405180830381858888f19350505050151561036d57600080fd5b6002543411156103be5733600160a060020a03166108fc610399600254346103c090919063ffffffff16565b9081150290604051600060405180830381858888f1935050505015156103be57600080fd5b565b6000828211156103cc57fe5b50900390565b60405161060f806103e3833901905600606060405260008054600160a060020a033316600160a060020a03199091161790556105df806100306000396000f3006060604052361561008b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634889da6381146100ce5780636ecf6c17146100f957806373fea5031461011b5780638da5cb5b1461013d578063aa3ba1791461016c578063b10d6b411461017f578063ccb893f7146101c2578063f2fde38b146101ea575b6000341161009857600080fd5b600054600160a060020a03163480156108fc0290604051600060405180830381858888f1935050505015156100cc57600080fd5b005b6100e5600160a060020a0360043516602435610209565b604051901515815260200160405180910390f35b341561010457600080fd5b6100e5600160a060020a03600435166024356102ce565b341561012657600080fd5b6100e5600160a060020a036004351660243561036d565b341561014857600080fd5b6101506103ab565b604051600160a060020a03909116815260200160405180910390f35b341561017757600080fd5b6100cc6103ba565b341561018a57600080fd5b610195600435610410565b604051600160a060020a039384168152919092166020820152604080820192909252606001905180910390f35b34156101cd57600080fd5b6100e5600160a060020a0360043581169060243516604435610440565b34156101f557600080fd5b6100cc600160a060020a0360043516610518565b600081815260016020526040812054600160a060020a03161561022b57600080fd5b6000828152600160208190526040918290208054600160a060020a033381811673ffffffffffffffffffffffffffffffffffffffff199384161784559383018054918916919092161790554360029091015583917fcd188cdb7843f0d2cf4a16b83cc2c18f10e280551d698e65e095976c2ef890f39190869051600160a060020a039283168152911660208201526040908101905180910390a250600192915050565b600081815260016020819052604082200154600160a060020a038481169116146102f757600080fd5b60008281526001602081905260409182902001805473ffffffffffffffffffffffffffffffffffffffff1916905582907fc0dffbae164b623d0161811974c3fd52d435c3c91eaa665dbf2e13d74db914ae90859051600160a060020a03909116815260200160405180910390a250600192915050565b6000600160a060020a038316158015906103a4575060008281526001602081905260409091200154600160a060020a038481169116145b9392505050565b600054600160a060020a031681565b60005433600160a060020a039081169116146103d557600080fd5b600054600160a060020a039081169030163180156108fc0290604051600060405180830381858888f19350505050151561040e57600080fd5b565b6000908152600160208190526040909120805491810154600290910154600160a060020a03928316939290911691565b600083600160a060020a031633600160a060020a031614151561046257600080fd5b60008281526001602081905260409091200154600160a060020a0385811691161461048c57600080fd5b60008281526001602081905260409182902001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03861617905582907f2d72a3e944e8feae8d85647a0a70858562be2a54859852cd6152fff1ac035d64908690869051600160a060020a039283168152911660208201526040908101905180910390a25060019392505050565b60005433600160a060020a0390811691161461053357600080fd5b600160a060020a038116151561054857600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03929092169190911790555600a165627a7a72305820ae0f22ca473f47cf32cc99711f1c88912145aaad7da68dfe4ae6db674b0a4b540029a165627a7a72305820c62a02f6724af688340786ac6b536e791e612c87f73058d86911bf449802c92e0029",
+  "deployedBytecode": "0x6060604052361561006a5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631c31f71081146100a057806344a0d68a146100bf5780638da5cb5b146100d5578063efc81a8c14610104578063f2fde38b1461010c575b600154600160a060020a03163480156108fc0290604051600060405180830381858888f19350505050151561009e57600080fd5b005b34156100ab57600080fd5b61009e600160a060020a036004351661012b565b34156100ca57600080fd5b61009e600435610175565b34156100e057600080fd5b6100e8610195565b604051600160a060020a03909116815260200160405180910390f35b61009e6101a4565b341561011757600080fd5b61009e600160a060020a0360043516610299565b60005433600160a060020a0390811691161461014657600080fd5b6001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b60005433600160a060020a0390811691161461019057600080fd5b600255565b600054600160a060020a031681565b6002546000903410156101b657600080fd5b6101be6103d2565b604051809103906000f08015156101d457600080fd5b905080600160a060020a031663f2fde38b336040517c010000000000000000000000000000000000000000000000000000000063ffffffff8416028152600160a060020a039091166004820152602401600060405180830381600087803b151561023d57600080fd5b6102c65a03f1151561024e57600080fd5b5050507fcf78cf0d6f3d8371e1075c69c492ab4ec5d8cf23a1a239b6a51a1d00be7ca31281604051600160a060020a03909116815260200160405180910390a1610296610334565b50565b60005433600160a060020a039081169116146102b457600080fd5b600160a060020a03811615156102c957600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0392909216919091179055565b600154600254600160a060020a039091169080156108fc0290604051600060405180830381858888f19350505050151561036d57600080fd5b6002543411156103be5733600160a060020a03166108fc610399600254346103c090919063ffffffff16565b9081150290604051600060405180830381858888f1935050505015156103be57600080fd5b565b6000828211156103cc57fe5b50900390565b60405161060f806103e3833901905600606060405260008054600160a060020a033316600160a060020a03199091161790556105df806100306000396000f3006060604052361561008b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634889da6381146100ce5780636ecf6c17146100f957806373fea5031461011b5780638da5cb5b1461013d578063aa3ba1791461016c578063b10d6b411461017f578063ccb893f7146101c2578063f2fde38b146101ea575b6000341161009857600080fd5b600054600160a060020a03163480156108fc0290604051600060405180830381858888f1935050505015156100cc57600080fd5b005b6100e5600160a060020a0360043516602435610209565b604051901515815260200160405180910390f35b341561010457600080fd5b6100e5600160a060020a03600435166024356102ce565b341561012657600080fd5b6100e5600160a060020a036004351660243561036d565b341561014857600080fd5b6101506103ab565b604051600160a060020a03909116815260200160405180910390f35b341561017757600080fd5b6100cc6103ba565b341561018a57600080fd5b610195600435610410565b604051600160a060020a039384168152919092166020820152604080820192909252606001905180910390f35b34156101cd57600080fd5b6100e5600160a060020a0360043581169060243516604435610440565b34156101f557600080fd5b6100cc600160a060020a0360043516610518565b600081815260016020526040812054600160a060020a03161561022b57600080fd5b6000828152600160208190526040918290208054600160a060020a033381811673ffffffffffffffffffffffffffffffffffffffff199384161784559383018054918916919092161790554360029091015583917fcd188cdb7843f0d2cf4a16b83cc2c18f10e280551d698e65e095976c2ef890f39190869051600160a060020a039283168152911660208201526040908101905180910390a250600192915050565b600081815260016020819052604082200154600160a060020a038481169116146102f757600080fd5b60008281526001602081905260409182902001805473ffffffffffffffffffffffffffffffffffffffff1916905582907fc0dffbae164b623d0161811974c3fd52d435c3c91eaa665dbf2e13d74db914ae90859051600160a060020a03909116815260200160405180910390a250600192915050565b6000600160a060020a038316158015906103a4575060008281526001602081905260409091200154600160a060020a038481169116145b9392505050565b600054600160a060020a031681565b60005433600160a060020a039081169116146103d557600080fd5b600054600160a060020a039081169030163180156108fc0290604051600060405180830381858888f19350505050151561040e57600080fd5b565b6000908152600160208190526040909120805491810154600290910154600160a060020a03928316939290911691565b600083600160a060020a031633600160a060020a031614151561046257600080fd5b60008281526001602081905260409091200154600160a060020a0385811691161461048c57600080fd5b60008281526001602081905260409182902001805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03861617905582907f2d72a3e944e8feae8d85647a0a70858562be2a54859852cd6152fff1ac035d64908690869051600160a060020a039283168152911660208201526040908101905180910390a25060019392505050565b60005433600160a060020a0390811691161461053357600080fd5b600160a060020a038116151561054857600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03929092169190911790555600a165627a7a72305820ae0f22ca473f47cf32cc99711f1c88912145aaad7da68dfe4ae6db674b0a4b540029a165627a7a72305820c62a02f6724af688340786ac6b536e791e612c87f73058d86911bf449802c92e0029",
+  "sourceMap": "92:341:4:-;;;516:5:16;:18;;-1:-1:-1;;;;;524:10:16;516:18;-1:-1:-1;;;;;;516:18:16;;;;;;;;;304:24:0;;;;;;;;;;356:10;338:15;:28;92:341:4;;;;;;",
+  "deployedSourceMap": "92:341:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;855:11:0;;-1:-1:-1;;;;;855:11:0;876:9;855:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;92:341:4;584:109:0;;;;;;;;;;-1:-1:-1;;;;;584:109:0;;;;;699:113;;;;;;;;;;;;;;244:20:16;;;;;;;;;;;;;;;-1:-1:-1;;;;;244:20:16;;;;;;;;;;;;;;140:291:4;;;;872:191:16;;;;;;;;;;-1:-1:-1;;;;;872:191:16;;;;;584:109:0;680:5:16;;666:10;-1:-1:-1;;;;;666:19:16;;;680:5;;666:19;658:28;;;;;;660:11:0;:26;;-1:-1:-1;;660:26:0;-1:-1:-1;;;;;660:26:0;;;;;;;;;;584:109::o;699:113::-;680:5:16;;666:10;-1:-1:-1;;;;;666:19:16;;;680:5;;666:19;658:28;;;;;;771:15:0;:34;699:113::o;244:20:16:-;;;-1:-1:-1;;;;;244:20:16;;:::o;140:291:4:-;206:15;;233:30;;193:9;:28;;185:37;;;;;;266:20;;:::i;:::-;;;;;;;;;;;;;;;;;;233:53;;304:15;-1:-1:-1;;;;;304:33:4;;338:10;304:45;;;;;;;;;-1:-1:-1;;;;;304:45:4;;;;;;;;;-1:-1:-1;304:45:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;360:32;376:15;360:32;;-1:-1:-1;;;;;360:32:4;;;;;;;;;;;;;;402:22;:20;:22::i;:::-;140:291;:::o;872:191:16:-;680:5;;666:10;-1:-1:-1;;;;;666:19:16;;;680:5;;666:19;658:28;;;;;;-1:-1:-1;;;;;954:22:16;;;;946:31;;;;;;1014:5;;-1:-1:-1;;;;;993:37:16;;;;1014:5;993:37;;;;;;;;;;1040:5;:16;;-1:-1:-1;;1040:16:16;-1:-1:-1;;;;;1040:16:16;;;;;;;;;;872:191::o;379:195:0:-;424:11;;445:15;;-1:-1:-1;;;;;424:11:0;;;;:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;487:15;;475:9;:27;471:96;;;516:10;-1:-1:-1;;;;;516:19:0;:51;536:30;550:15;;536:9;:13;;:30;;;;:::i;:::-;516:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;379:195::o;428:120:15:-;486:7;512:6;;;;505:14;;;;-1:-1:-1;536:5:15;;;428:120::o;92:341:4:-;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\nimport \"./Builder.sol\";\nimport \"../document/PublicDocument.sol\";\n\ncontract PublicDocumentBuilder is Builder {\n    function create() payable external {\n        require(msg.value >= buildingCostWei);\n\n        PublicDocument documentStorage = new PublicDocument();        \n        documentStorage.transferOwnership(msg.sender);\n\n        ContractCreated(documentStorage);\n        super.processPayment();\n    }\n}",
+  "sourcePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/builder/PublicDocumentBuilder.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/builder/PublicDocumentBuilder.sol",
+      "exportedSymbols": {
+        "PublicDocumentBuilder": [
+          270
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 232,
+        "name": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 97,
+          "absolutePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/builder/Builder.sol",
+          "file": "./Builder.sol",
+          "scope": 271,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 233,
+        "name": "ImportDirective",
+        "src": "26:23:4"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 856,
+          "absolutePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/document/PublicDocument.sol",
+          "file": "../document/PublicDocument.sol",
+          "scope": 271,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 234,
+        "name": "ImportDirective",
+        "src": "50:40:4"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            96,
+            855,
+            1088
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            270,
+            96,
+            1088
+          ],
+          "name": "PublicDocumentBuilder",
+          "scope": 271
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Builder",
+                  "referencedDeclaration": 96,
+                  "type": "contract Builder"
+                },
+                "id": 235,
+                "name": "UserDefinedTypeName",
+                "src": "126:7:4"
+              }
+            ],
+            "id": 236,
+            "name": "InheritanceSpecifier",
+            "src": "126:7:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "create",
+              "payable": true,
+              "scope": 270,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 237,
+                "name": "ParameterList",
+                "src": "155:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 238,
+                "name": "ParameterList",
+                "src": "175:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1109,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 239,
+                            "name": "Identifier",
+                            "src": "185:7:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 1091,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 240,
+                                    "name": "Identifier",
+                                    "src": "193:3:4"
+                                  }
+                                ],
+                                "id": 241,
+                                "name": "MemberAccess",
+                                "src": "193:9:4"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 12,
+                                  "type": "uint256",
+                                  "value": "buildingCostWei"
+                                },
+                                "id": 242,
+                                "name": "Identifier",
+                                "src": "206:15:4"
+                              }
+                            ],
+                            "id": 243,
+                            "name": "BinaryOperation",
+                            "src": "193:28:4"
+                          }
+                        ],
+                        "id": 244,
+                        "name": "FunctionCall",
+                        "src": "185:37:4"
+                      }
+                    ],
+                    "id": 245,
+                    "name": "ExpressionStatement",
+                    "src": "185:37:4"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        247
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "documentStorage",
+                          "scope": 269,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "contract PublicDocument",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "PublicDocument",
+                              "referencedDeclaration": 855,
+                              "type": "contract PublicDocument"
+                            },
+                            "id": 246,
+                            "name": "UserDefinedTypeName",
+                            "src": "233:14:4"
+                          }
+                        ],
+                        "id": 247,
+                        "name": "VariableDeclaration",
+                        "src": "233:30:4"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "contract PublicDocument",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "function () returns (contract PublicDocument)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "contractScope": null,
+                                  "name": "PublicDocument",
+                                  "referencedDeclaration": 855,
+                                  "type": "contract PublicDocument"
+                                },
+                                "id": 248,
+                                "name": "UserDefinedTypeName",
+                                "src": "270:14:4"
+                              }
+                            ],
+                            "id": 249,
+                            "name": "NewExpression",
+                            "src": "266:18:4"
+                          }
+                        ],
+                        "id": 250,
+                        "name": "FunctionCall",
+                        "src": "266:20:4"
+                      }
+                    ],
+                    "id": 251,
+                    "name": "VariableDeclarationStatement",
+                    "src": "233:53:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "transferOwnership",
+                              "referencedDeclaration": 1087,
+                              "type": "function (address) external"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 247,
+                                  "type": "contract PublicDocument",
+                                  "value": "documentStorage"
+                                },
+                                "id": 252,
+                                "name": "Identifier",
+                                "src": "304:15:4"
+                              }
+                            ],
+                            "id": 254,
+                            "name": "MemberAccess",
+                            "src": "304:33:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1091,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 255,
+                                "name": "Identifier",
+                                "src": "338:3:4"
+                              }
+                            ],
+                            "id": 256,
+                            "name": "MemberAccess",
+                            "src": "338:10:4"
+                          }
+                        ],
+                        "id": 257,
+                        "name": "FunctionCall",
+                        "src": "304:45:4"
+                      }
+                    ],
+                    "id": 258,
+                    "name": "ExpressionStatement",
+                    "src": "304:45:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_PublicDocument_$855",
+                                  "typeString": "contract PublicDocument"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 16,
+                              "type": "function (address)",
+                              "value": "ContractCreated"
+                            },
+                            "id": 259,
+                            "name": "Identifier",
+                            "src": "360:15:4"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 247,
+                              "type": "contract PublicDocument",
+                              "value": "documentStorage"
+                            },
+                            "id": 260,
+                            "name": "Identifier",
+                            "src": "376:15:4"
+                          }
+                        ],
+                        "id": 261,
+                        "name": "FunctionCall",
+                        "src": "360:32:4"
+                      }
+                    ],
+                    "id": 262,
+                    "name": "ExpressionStatement",
+                    "src": "360:32:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "processPayment",
+                              "referencedDeclaration": 60,
+                              "type": "function ()"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 1142,
+                                  "type": "contract super PublicDocumentBuilder",
+                                  "value": "super"
+                                },
+                                "id": 263,
+                                "name": "Identifier",
+                                "src": "402:5:4"
+                              }
+                            ],
+                            "id": 265,
+                            "name": "MemberAccess",
+                            "src": "402:20:4"
+                          }
+                        ],
+                        "id": 266,
+                        "name": "FunctionCall",
+                        "src": "402:22:4"
+                      }
+                    ],
+                    "id": 267,
+                    "name": "ExpressionStatement",
+                    "src": "402:22:4"
+                  }
+                ],
+                "id": 268,
+                "name": "Block",
+                "src": "175:256:4"
+              }
+            ],
+            "id": 269,
+            "name": "FunctionDefinition",
+            "src": "140:291:4"
+          }
+        ],
+        "id": 270,
+        "name": "ContractDefinition",
+        "src": "92:341:4"
+      }
+    ],
+    "id": 271,
+    "name": "SourceUnit",
+    "src": "0:433:4"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2017-10-16T12:39:52.791Z"
+}
