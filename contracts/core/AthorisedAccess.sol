@@ -7,8 +7,8 @@ import "../ownership/Ownable.sol";
  * @dev This contract allows to organise a permission based access.
  */
 contract AthorisedAccess is Ownable {
-    event Athorised(address sender, address issuer);
-    event Deathorised(address sender, address issuer);
+    event Authorised(address sender, address issuer);
+    event Deauthorised(address sender, address issuer);
 
     mapping (address => bool) issuers;
 
