@@ -180,7 +180,7 @@
         "attributes": {
           "contractDependencies": [
             499,
-            1088
+            1092
           ],
           "contractKind": "contract",
           "documentation": "@title RevokableDocument\n@dev This contract supports revokable documents.",
@@ -188,7 +188,7 @@
           "linearizedBaseContracts": [
             546,
             499,
-            1088
+            1092
           ],
           "name": "RevokableDocument",
           "scope": 547
@@ -427,7 +427,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1109,
+                              "referencedDeclaration": 1113,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -805,5 +805,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2017-10-16T12:39:52.791Z"
+  "updatedAt": "2017-10-20T08:54:02.053Z"
 }

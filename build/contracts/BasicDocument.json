@@ -123,7 +123,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1089,
+          "SourceUnit": 1093,
           "absolutePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/ownership/Ownable.sol",
           "file": "../ownership/Ownable.sol",
           "scope": 500,
@@ -139,14 +139,14 @@
       {
         "attributes": {
           "contractDependencies": [
-            1088
+            1092
           ],
           "contractKind": "contract",
           "documentation": "@title Document\n@dev This basic contract allows to issue documents.",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             499,
-            1088
+            1092
           ],
           "name": "BasicDocument",
           "scope": 500
@@ -163,7 +163,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Ownable",
-                  "referencedDeclaration": 1088,
+                  "referencedDeclaration": 1092,
                   "type": "contract Ownable"
                 },
                 "id": 425,
@@ -550,7 +550,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1109,
+                              "referencedDeclaration": 1113,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -795,7 +795,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1006,7 +1006,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1090,
+                                  "referencedDeclaration": 1094,
                                   "type": "block",
                                   "value": "block"
                                 },
@@ -1091,7 +1091,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1191,5 +1191,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2017-10-16T12:39:52.791Z"
+  "updatedAt": "2017-10-20T08:54:02.053Z"
 }

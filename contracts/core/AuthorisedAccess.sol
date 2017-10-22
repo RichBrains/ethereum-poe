@@ -3,17 +3,17 @@ pragma solidity ^0.4.17;
 import "../ownership/Ownable.sol";
 
 /**
- * @title AthorisedAccess
+ * @title AuthorisedAccess
  * @dev This contract allows to organise a permission based access.
  */
-contract AthorisedAccess is Ownable {
+contract AuthorisedAccess is Ownable {
     event Authorised(address sender, address issuer);
     event Deauthorised(address sender, address issuer);
 
     mapping (address => bool) issuers;
 
     /**
-     * @dev Throws if called by any account other than the athorised issuer.
+     * @dev Throws if called by any account other than the authorised issuer.
      * @notice Owner is not authorised by default.
     */
     function authorisedCall() internal view returns (bool) {
@@ -26,7 +26,7 @@ contract AthorisedAccess is Ownable {
      */
     function authorise(address issuer) onlyOwner external returns (bool) {
         issuers[issuer] = true;
-        Athorised(msg.sender, issuer);
+        Authorised(msg.sender, issuer);
 
         return true;
     }
@@ -36,7 +36,7 @@ contract AthorisedAccess is Ownable {
      */
     function deauthorise(address issuer) onlyOwner external returns (bool) {
         issuers[issuer] = false;
-        Deathorised(msg.sender, issuer);
+        Deauthorised(msg.sender, issuer);
 
         return true;
     }

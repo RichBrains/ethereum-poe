@@ -165,7 +165,7 @@
           "contractDependencies": [
             96,
             855,
-            1088
+            1092
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -173,7 +173,7 @@
           "linearizedBaseContracts": [
             270,
             96,
-            1088
+            1092
           ],
           "name": "PublicDocumentBuilder",
           "scope": 271
@@ -270,7 +270,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1109,
+                              "referencedDeclaration": 1113,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -311,7 +311,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1091,
+                                      "referencedDeclaration": 1095,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -474,7 +474,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferOwnership",
-                              "referencedDeclaration": 1087,
+                              "referencedDeclaration": 1091,
                               "type": "function (address) external"
                             },
                             "children": [
@@ -515,7 +515,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -638,7 +638,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1142,
+                                  "referencedDeclaration": 1146,
                                   "type": "contract super PublicDocumentBuilder",
                                   "value": "super"
                                 },
@@ -683,5 +683,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2017-10-16T12:39:52.791Z"
+  "updatedAt": "2017-10-20T08:54:02.053Z"
 }

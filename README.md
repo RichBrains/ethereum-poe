@@ -22,7 +22,7 @@ Builder name and description | Builder address | Service fee | Abi for created c
 - `verifyDocument` verifies if the `document` belongs to the given `recipient`.
 - `getDocument` returns `document's` information.
 - `setIssuePrice` sets a fixed fee for document issue (only payable contracts). Fires `NewPriceSet` event.
-- `authorise` authorises new `issuer` (trusted ethereum address) to issue and revoke documents. Fires `Athorised` event.
-- `deauthorise` deathorises `issuer`. Fires `Deathorised` event.
+- `authorise` authorises new `issuer` (trusted ethereum address) to issue and revoke documents. Fires `Authorised` event.
+- `deauthorise` deauthorises `issuer`. Fires `Deauthorised` event.
 - `isAuthorised` indicates whether `issuer` has been authorised.
 - `transferOwnership` allows the current owner to transfer control of the contract to a `newOwner`. Fires `OwnershipTransferred` event.

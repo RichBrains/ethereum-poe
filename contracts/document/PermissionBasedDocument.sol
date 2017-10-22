@@ -1,13 +1,13 @@
 pragma solidity ^0.4.17;
 
-import "../core/AthorisedAccess.sol";
+import "../core/AuthorisedAccess.sol";
 import "./PublicDocument.sol";
 
 /**
  * @title PermissionBasedDocument
  * @dev Owner can authorise/deauthorise any address to allow/disallow issue and revoke documents.
  */
-contract PermissionBasedDocument is PublicDocument, AthorisedAccess {
+contract PermissionBasedDocument is PublicDocument, AuthorisedAccess {
     /**
      * @dev Issues a document.
      * @dev Can be called by the authorised issuer only.

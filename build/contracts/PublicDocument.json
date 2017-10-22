@@ -325,7 +325,7 @@
             499,
             546,
             603,
-            1088
+            1092
           ],
           "contractKind": "contract",
           "documentation": "@title PublicDocument\n@dev Anyone who knows the contract address can issue and revoke documents.",
@@ -335,7 +335,7 @@
             603,
             546,
             499,
-            1088
+            1092
           ],
           "name": "PublicDocument",
           "scope": 856
@@ -1164,7 +1164,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1109,
+                              "referencedDeclaration": 1113,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -1205,7 +1205,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1091,
+                                      "referencedDeclaration": 1095,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -1290,7 +1290,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1036,
+                                  "referencedDeclaration": 1040,
                                   "type": "address",
                                   "value": "owner"
                                 },
@@ -1321,7 +1321,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1402,7 +1402,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1062,
+                      "referencedDeclaration": 1066,
                       "type": "modifier ()",
                       "value": "onlyOwner"
                     },
@@ -1457,7 +1457,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1036,
+                                  "referencedDeclaration": 1040,
                                   "type": "address",
                                   "value": "owner"
                                 },
@@ -1488,7 +1488,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1125,
+                                  "referencedDeclaration": 1129,
                                   "type": "contract PublicDocument",
                                   "value": "this"
                                 },
@@ -1533,5 +1533,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2017-10-16T12:39:52.792Z"
+  "updatedAt": "2017-10-20T08:54:02.054Z"
 }

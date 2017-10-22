@@ -129,7 +129,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1033,
+          "SourceUnit": 1037,
           "absolutePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/math/SafeMath.sol",
           "file": "../math/SafeMath.sol",
           "scope": 97,
@@ -144,7 +144,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1089,
+          "SourceUnit": 1093,
           "absolutePath": "/Users/maxdinman/Documents/Sites/ethereum-poe/contracts/ownership/Ownable.sol",
           "file": "../ownership/Ownable.sol",
           "scope": 97,
@@ -160,14 +160,14 @@
       {
         "attributes": {
           "contractDependencies": [
-            1088
+            1092
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             96,
-            1088
+            1092
           ],
           "name": "Builder",
           "scope": 97
@@ -184,7 +184,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Ownable",
-                  "referencedDeclaration": 1088,
+                  "referencedDeclaration": 1092,
                   "type": "contract Ownable"
                 },
                 "id": 4,
@@ -202,7 +202,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "SafeMath",
-                  "referencedDeclaration": 1032,
+                  "referencedDeclaration": 1036,
                   "type": "library SafeMath"
                 },
                 "id": 6,
@@ -405,7 +405,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -721,7 +721,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -805,7 +805,7 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 1091,
+                                          "referencedDeclaration": 1095,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -851,7 +851,7 @@
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "member_name": "sub",
-                                      "referencedDeclaration": 1007,
+                                      "referencedDeclaration": 1011,
                                       "type": "function (uint256,uint256) pure returns (uint256)"
                                     },
                                     "children": [
@@ -873,7 +873,7 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 1091,
+                                              "referencedDeclaration": 1095,
                                               "type": "msg",
                                               "value": "msg"
                                             },
@@ -1005,7 +1005,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1062,
+                      "referencedDeclaration": 1066,
                       "type": "modifier ()",
                       "value": "onlyOwner"
                     },
@@ -1151,7 +1151,7 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1062,
+                      "referencedDeclaration": 1066,
                       "type": "modifier ()",
                       "value": "onlyOwner"
                     },
@@ -1338,7 +1338,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1091,
+                                  "referencedDeclaration": 1095,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1383,5 +1383,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2017-10-16T12:39:52.790Z"
+  "updatedAt": "2017-10-20T08:54:02.052Z"
 }

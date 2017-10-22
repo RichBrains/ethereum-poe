@@ -1,6 +1,6 @@
 pragma solidity ^0.4.17;
 
-import "../core/AthorisedAccess.sol";
+import "../core/AuthorisedAccess.sol";
 import "./PublicPayableDocument.sol";
 
 /**
@@ -8,7 +8,7 @@ import "./PublicPayableDocument.sol";
  * @dev Charges a fixed fee (goes to the contract's owner) for document issue. 
  *      Owner can authorise/deauthorise any address to allow/disallow issue and revoke documents.
  */
-contract PermissionBasedPayableDocument is PublicPayableDocument, AthorisedAccess {
+contract PermissionBasedPayableDocument is PublicPayableDocument, AuthorisedAccess {
     /**
      * @dev Issues a document for a fixed fee.
      * @dev Can be called by the authorised issuer only.

@@ -296,7 +296,7 @@
             546,
             603,
             855,
-            1088
+            1092
           ],
           "contractKind": "contract",
           "documentation": "@title PrivateDocument\n@dev Only contract's owner can issue and revoke documents.",
@@ -307,7 +307,7 @@
             603,
             546,
             499,
-            1088
+            1092
           ],
           "name": "PrivateDocument",
           "scope": 764
@@ -474,7 +474,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1109,
+                              "referencedDeclaration": 1113,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -515,7 +515,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1091,
+                                      "referencedDeclaration": 1095,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -534,7 +534,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1036,
+                                  "referencedDeclaration": 1040,
                                   "type": "address",
                                   "value": "owner"
                                 },
@@ -601,7 +601,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1138,
+                                  "referencedDeclaration": 1142,
                                   "type": "contract super PrivateDocument",
                                   "value": "super"
                                 },
@@ -800,7 +800,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1109,
+                              "referencedDeclaration": 1113,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -841,7 +841,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1091,
+                                      "referencedDeclaration": 1095,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -860,7 +860,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1036,
+                                  "referencedDeclaration": 1040,
                                   "type": "address",
                                   "value": "owner"
                                 },
@@ -927,7 +927,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1138,
+                                  "referencedDeclaration": 1142,
                                   "type": "contract super PrivateDocument",
                                   "value": "super"
                                 },
@@ -1000,5 +1000,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.0",
-  "updatedAt": "2017-10-16T12:39:52.792Z"
+  "updatedAt": "2017-10-20T08:54:02.054Z"
 }
